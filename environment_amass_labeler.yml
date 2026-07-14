@@ -1,0 +1,11 @@
+name: amass_labeler
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python=3.11
+  - tk==8.6.15
+  - scipy==1.17.1
+variables:
+  KMP_DUPLICATE_LIB_OK: 'TRUE'
+prefix: /opt/anaconda3/envs/amass_labeler
