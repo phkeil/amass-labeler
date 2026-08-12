@@ -50,7 +50,12 @@ Build the isolated environment using the provided YAML file:
 - Rows in the sequence list update dynamically with muted colors reflecting their current label status.
 ## Output & Dataset Pipeline Integration
 - Saved Output: Labels are saved automatically to amass_labels.csv inside the application folder.
-- Format: relative_path,label ACCAD/Female1General_c3d/A10_-_lie_to_crouch_stageii.npz,2 ACCAD/Female1Running_c3d/C10_-__run_backwards_stop_run_forward_stageii.npz,0
+- Format:
+  ```bash
+  relative_path,label
+  ACCAD/Female1General_c3d/A10_-_lie_to_crouch_stageii.npz,2
+  ACCAD/Female1Running_c3d/C10_-__run_backwards_stop_run_forward_stageii.npz,0
+  ``` 
 - Pipeline Integration: Once labeling is complete, copy amass_labels.csv to the destination defined in projector_pipeline.py under AMASS_LABELS_PATH to apply filters during dataset generation.
 
 ---
